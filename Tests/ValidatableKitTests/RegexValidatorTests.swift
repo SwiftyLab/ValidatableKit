@@ -1,6 +1,7 @@
-#if canImport(RegexBuilder)
+#if canImport(_StringProcessing) && canImport(RegexBuilder)
 import XCTest
 import RegexBuilder
+import _StringProcessing
 @testable import ValidatableKit
 
 @available(swift 5.7)
@@ -103,22 +104,18 @@ final class RegexValidatorTests: XCTestCase {
         let regex = Regex {
             "name:"
             OneOrMore(" ")
-            Capture {
-                OneOrMore {
-                    CharacterClass(.digit, .word, .whitespace)
-                }
-            } transform: {
-                String($0)
-            }
+            Capture(
+                { OneOrMore { CharacterClass(.digit, .word, .whitespace) } },
+                transform: { String($0) }
+            )
             ","
             OneOrMore(" ")
             "user_id:"
             OneOrMore(" ")
-            TryCapture {
-                OneOrMore(.digit)
-            } transform: {
-                Int($0)
-            }
+            TryCapture(
+                { OneOrMore(.digit) },
+                transform: { Int($0) }
+            )
         }
 
         let successResult = Validator<String>.matching(

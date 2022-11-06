@@ -1,4 +1,6 @@
-#if canImport(RegexBuilder)
+#if canImport(_StringProcessing)
+import _StringProcessing
+
 public extension Validator
 where T: BidirectionalCollection, T.SubSequence == Substring {
     /// Validates whether current string matches provided regular expression
@@ -29,7 +31,7 @@ where T: BidirectionalCollection, T.SubSequence == Substring {
             case .custom(let matcher):
                 match = matcher($0, regex)
             }
-            guard let match = match else {
+            guard match != nil else {
                 return ValidatorResults.Regex(matched: false)
             }
 
@@ -39,7 +41,7 @@ where T: BidirectionalCollection, T.SubSequence == Substring {
                 },
                 &&
             )
-            return validator.validate(match.output)
+            return validator.validate(match!.output)
         }
     }
 }

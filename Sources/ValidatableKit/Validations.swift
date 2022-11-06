@@ -12,7 +12,7 @@ public class Validations<T> {
             [:]
 
         public var isFailure: Bool {
-            return self.results.first(where: \.value.isFailure) != nil
+            return self.results.first { $1.isFailure } != nil
         }
 
         public var successDescriptions: [String] {

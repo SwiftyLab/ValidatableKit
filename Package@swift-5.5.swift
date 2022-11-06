@@ -9,7 +9,7 @@ let package = Package(
         .macOS(.v10_10),
         .tvOS(.v9),
         .watchOS(.v2),
-        .macCatalyst(.v13)
+        .macCatalyst(.v13),
     ],
     products: [
         .library(name: "ValidatableKit", targets: ["ValidatableKit"]),
