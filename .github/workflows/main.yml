@@ -59,7 +59,7 @@ jobs:
               "swift": "5.7"
             },
             {
-              "os": "ubuntu-latest",
+              "os": "ubuntu-20.04",
               "swift": "5.2"
             }
           ]
@@ -82,66 +82,14 @@ jobs:
     name: CocoaPods
     uses: SwiftyLab/ci/.github/workflows/cocoapods.yml@main
     with:
-      matrix: >
-        {
-          "include": [
-            {
-              "os": "macos-12",
-              "xcode": "13.4",
-              "platform": "macos"
-            },
-            {
-              "os": "macos-12",
-              "xcode": "13.4",
-              "platform": "watchos"
-            },
-            {
-              "os": "macos-12",
-              "xcode": "13.4",
-              "platform": "tvos"
-            },
-            {
-              "os": "macos-12",
-              "xcode": "13.4",
-              "platform": "ios"
-            }
-          ]
-        }
+      os: macos-12
 
   xcode-test:
     name: Xcode
     uses: SwiftyLab/ci/.github/workflows/xcode.yml@main
     with:
-      matrix: >
-        {
-          "include": [
-            {
-              "os": "macos-10.15",
-              "xcode": "11.3.1",
-              "platform": "macOS"
-            },
-            {
-              "os": "macos-10.15",
-              "xcode": "11.3.1",
-              "platform": "watchOS"
-            },
-            {
-              "os": "macos-10.15",
-              "xcode": "11.3.1",
-              "platform": "tvOS"
-            },
-            {
-              "os": "macos-10.15",
-              "xcode": "11.3.1",
-              "platform": "iOS"
-            },
-            {
-              "os": "macos-10.15",
-              "xcode": "11.3.1",
-              "platform": "mac-catalyst"
-            }
-          ]
-        }
+      os: macos-11
+      xcode: '11.7'
 
   ci:
     name: CI

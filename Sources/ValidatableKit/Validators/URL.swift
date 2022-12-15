@@ -1,4 +1,4 @@
-import struct Foundation.URL
+import Foundation
 
 public extension Validator where T == String {
     /// Validates whether a `String` is a valid URL.

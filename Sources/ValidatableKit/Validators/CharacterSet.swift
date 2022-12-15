@@ -1,4 +1,4 @@
-import struct Foundation.CharacterSet
+import Foundation
 
 public extension Validator where T: StringProtocol {
     /// Validates that all characters in a `String` are ASCII (bytes 0..<128).
