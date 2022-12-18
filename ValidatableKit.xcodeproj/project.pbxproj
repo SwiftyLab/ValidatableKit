@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		47D2C6A8521E8B4479FD3949 /* ValidatableKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 408E7642B9561DDA378AFFBF /* ValidatableKit.docc */; };
+		15A52814E7435D71F31EAF08 /* ValidatableKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 66F2CC9048455F67131F9029 /* ValidatableKit.docc */; };
 		OBJ_100 /* ValidatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* ValidatableTests.swift */; };
 		OBJ_101 /* ValidatorsOperatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* ValidatorsOperatorsTests.swift */; };
 		OBJ_102 /* ValidatorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* ValidatorsTests.swift */; };
@@ -57,7 +57,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		408E7642B9561DDA378AFFBF /* ValidatableKit.docc */ = {isa = PBXFileReference; includeInIndex = 1; path = ValidatableKit.docc; sourceTree = "<group>"; };
+		66F2CC9048455F67131F9029 /* ValidatableKit.docc */ = {isa = PBXFileReference; includeInIndex = 1; path = ValidatableKit.docc; sourceTree = "<group>"; };
 		OBJ_12 /* Invalid.swift */ = {isa = PBXFileReference; path = Invalid.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Nested.swift */ = {isa = PBXFileReference; path = Nested.swift; sourceTree = "<group>"; };
 		OBJ_14 /* Skipped.swift */ = {isa = PBXFileReference; path = Skipped.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 				OBJ_18 /* Validations.swift */,
 				OBJ_19 /* Validator.swift */,
 				OBJ_20 /* Validators */,
-				408E7642B9561DDA378AFFBF /* ValidatableKit.docc */,
+				66F2CC9048455F67131F9029 /* ValidatableKit.docc */,
 			);
 			name = ValidatableKit;
 			path = Sources/ValidatableKit;
@@ -354,7 +354,7 @@
 				OBJ_75 /* Or.swift in Sources */,
 				OBJ_76 /* Regex.swift in Sources */,
 				OBJ_77 /* URL.swift in Sources */,
-				47D2C6A8521E8B4479FD3949 /* ValidatableKit.docc in Sources */,
+				15A52814E7435D71F31EAF08 /* ValidatableKit.docc in Sources */,
 			);
 		};
 		OBJ_83 /* Sources */ = {
