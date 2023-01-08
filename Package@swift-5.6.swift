@@ -2,9 +2,6 @@
 
 import PackageDescription
 
-let github = "https://github.com"
-let appleGitHub = "\(github)/apple"
-
 let package = Package(
     name: "ValidatableKit",
     platforms: [
@@ -18,8 +15,8 @@ let package = Package(
         .library(name: "ValidatableKit", targets: ["ValidatableKit"]),
     ],
     dependencies: [
-        .package(url: "\(appleGitHub)/swift-docc-plugin", from: "1.0.0"),
-        .package(url: "\(appleGitHub)/swift-format", from: "0.50700.0"),
+        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-format", from: "0.50700.0"),
     ],
     targets: [
         .target(name: "ValidatableKit", dependencies: []),
